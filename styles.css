@@ -1,0 +1,135 @@
+body { 
+    font-family: "Arial", sans-serif; 
+    color: #333; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f3ebeb; 
+    line-height: 1.6; 
+  } 
+   
+  header { 
+    background-color: #dddddd; 
+    color: #000000; 
+    text-align: center; 
+    padding: 40px 20px; 
+  } 
+   
+  header h1 { 
+    font-size: 36px; 
+    margin: 0; 
+  } 
+   
+  nav { 
+    background-color: #333; 
+    text-align: center; 
+    padding: 10px 0; 
+  } 
+   
+  nav a { 
+    color: #fff; 
+    margin: 0 15px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+  } 
+   
+  nav a:hover { 
+    color: #acff5f; 
+  } 
+   
+  section { 
+    padding: 40px 20px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+  } 
+   
+  h2 { 
+    text-align: center; 
+    color: #000000; 
+  } 
+   
+  .portfolio-item { 
+    margin-bottom: 60px; 
+  } 
+   
+  .swiper-container { 
+    width: 100%; 
+    height: 400px; 
+    position: relative; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  } 
+   
+  .swiper-slide img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; /* Заменил cover на contain */
+    background-color: transparent; /* прозрачный фон */
+  } 
+   
+  .swiper-button-next, .swiper-button-prev { 
+    color: #FF0000; /* Изменил цвет на красный */
+    position: absolute; 
+    top: 50%; 
+    width: calc((100% - 100px) / 2); /* Увеличиваем кликабельную область */ 
+    transform: translateY(-50%); 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    pointer-events: auto; 
+    z-index: 10; 
+  } 
+   
+  .swiper-button-next { 
+    right: 0; 
+    justify-content: flex-end; 
+    padding-right: 10px; 
+  } 
+     
+  .swiper-button-prev { 
+    left: 0; 
+    justify-content: flex-start; 
+    padding-left: 10px; 
+  } 
+   
+  .swiper-pagination { 
+    bottom: 10px !important; 
+  } 
+   
+  .contact-info { 
+    background-color: #bae6ff; 
+    text-align: center; 
+    padding: 30px; 
+    margin-top: 60px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  } 
+   
+  .social-links a { 
+    color: #333; 
+    margin: 0 10px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    transition: color 0.3s ease; 
+  } 
+   
+  .social-links a:hover { 
+    color: #5723e6; 
+  } 
+   
+  @media (max-width: 768px) { 
+    .swiper-container { 
+      height: 250px; 
+    } 
+   
+    header h1 { 
+      font-size: 28px; 
+    } 
+   
+    nav a { 
+      margin: 0 10px; 
+    } 
+  }
+  
